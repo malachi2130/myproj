@@ -1,12 +1,14 @@
 <?php
-//This is a new php file
+//src/Controller/HomeController.php
 
 namespace App\Controller;
 
-//use Symfony\Component\HttpFoundation\Response;
-use Symfony\Component\Routing\Annotation\Routes;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\Response;
+use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 
-class HomeController {
+class HomeController extends AbstractController{
     
     /**
      * @Route("/home")

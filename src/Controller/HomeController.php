@@ -1,5 +1,21 @@
-<<<<<<< HEAD
+<?php
 //This is a new php file
-=======
 
->>>>>>> 07f5987f79ba37206209cbf2bd069497b0de2b2c
+namespace App\Controller;
+
+//use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\Routing\Annotation\Routes;
+
+class HomeController {
+    
+    /**
+     * @Route("/home")
+     */
+    public function home() {
+        $test = "this is a test for home";
+        return new Response (
+            '<html><body> String is: '.$test.'!</body></html>'
+        );
+    }
+}
+
